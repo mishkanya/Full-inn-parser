@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Primo.GMCS.CounterpartyScoring.Models.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,10 @@ namespace Primo.GMCS.CounterpartyScoring.Models.SiteData.KadArbitr
         /// <summary>
         /// Ответчик
         /// </summary>
-        public string Defendant { get; set; } 
+        public string Defendant { get; set; }
+        /// <summary>
+        /// Категория
+        /// </summary>
+        public KadArbitrTableElementType Type { get; set; }
     }
 }

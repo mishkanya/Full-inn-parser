@@ -33,9 +33,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LTools.Common">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.Dto">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Dto.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.Enums">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Enums.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.Scripting">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.SDK">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.WebBrowser">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.WebBrowser.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -54,23 +78,28 @@
     <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Json, Version=6.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Text.Json.6.0.5\lib\net461\System.Text.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\ContainersData.cs" />
+    <Compile Include="Activities\Elements\Back\PrimoDataFromKadArbitrTableBack.cs" />
+    <Compile Include="Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml.cs">
+      <DependentUpon>PrimoDataFromKadArbitrTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enums\KadArbitrTableElementType.cs" />
     <Compile Include="Models\InnResult.cs" />
     <Compile Include="Models\SiteData\BankrotFedresurResult.cs" />
     <Compile Include="Models\SiteData\EgrulNalogResult.cs" />
@@ -81,6 +110,10 @@
     <Compile Include="Models\SiteData\PbNalogResult.cs" />
     <Compile Include="Models\SiteData\BaseResult.cs" />
     <Compile Include="Models\SiteData\ZakupkiGovResult.cs" />
+    <Compile Include="PrimoTest.xaml.cs">
+      <DependentUpon>PrimoTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrimoTestBack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -88,14 +121,20 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Activities\" />
+    <Folder Include="Activities\Containers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrimoTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sample.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets'))" />
-  </Target>
 </Project>

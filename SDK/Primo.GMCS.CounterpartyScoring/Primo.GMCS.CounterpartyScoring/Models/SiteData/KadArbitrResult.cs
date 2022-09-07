@@ -12,10 +12,6 @@ namespace Primo.GMCS.CounterpartyScoring.Models.SiteData
     /// </summary>
     public class KadArbitrResult : BaseResult
     {
-        /// <summary>
-        /// Банкротные дела
-        /// </summary>
-        public bool IsBankrot { get; private set; }
         public KadArbitrResult() : base()
         {
             _tableResults = new List<TableResult>();

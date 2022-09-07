@@ -9,8 +9,9 @@ namespace Primo.GMCS.CounterpartyScoring.Models.SiteData
     [Serializable]
     public abstract class BaseResult
     {
-        public bool IsFind;
-        public bool HasError;
+        public bool IsFind { get; set; }
+        public bool HasError { get; set; }
+
         public DateTime CheckTime { get; private set; }
         public BaseResult()
         {
