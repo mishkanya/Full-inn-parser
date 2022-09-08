@@ -273,5 +273,3 @@ C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.Cou
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Primo.GMCS.CounterpartyScoring_MarkupCompile.lref
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Activities\Elements\View\PrimoDataFromKadArbitrTable.baml
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Primo.GMCS.CounterpartyScoring.g.resources
-C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\PrimoTest.g.cs
-C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\PrimoTest.baml

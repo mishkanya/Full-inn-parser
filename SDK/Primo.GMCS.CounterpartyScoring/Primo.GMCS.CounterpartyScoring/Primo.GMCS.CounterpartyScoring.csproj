@@ -110,10 +110,6 @@
     <Compile Include="Models\SiteData\PbNalogResult.cs" />
     <Compile Include="Models\SiteData\BaseResult.cs" />
     <Compile Include="Models\SiteData\ZakupkiGovResult.cs" />
-    <Compile Include="PrimoTest.xaml.cs">
-      <DependentUpon>PrimoTest.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PrimoTestBack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,10 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PrimoTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

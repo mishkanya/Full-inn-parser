@@ -1,6 +1,7 @@
 ﻿using LTools.Common.Model;
 using LTools.Common.UIElements;
 using LTools.SDK;
+using LTools.WebBrowser;
 using Primo.GMCS.CounterpartyScoring.Activities.Elements.View;
 using System;
 using System.Collections.Generic;
@@ -18,27 +19,28 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
     {
         public override string GroupName
         {
-            //get => $"GMCS{LTools.Common.UIElements.WFPublishedElementBase.TREE_SEPARATOR}Sites";
-            get => $"GMCS/Sites";
+            get => ContainersData.SitesGroupName;
             protected set { }
         }
 
         #region properties
-
+        /// <summary>
+        /// Название перменной браузера
+        /// </summary>
         private const string browserElementPropertie = "Browser";
 
-        private LTools.WebBrowser.BrowserInst browser;
+        private string _browser;
 
         /// <summary>
-        /// Property My Prop 1
+        /// Отображение переменной в студии
         /// </summary>
         [LTools.Common.Model.Serialization.StoringProperty]
-        [LTools.Common.Model.Studio.ValidateReturnScript(DataType = typeof(LTools.WebBrowser.BrowserInst))]
-        [System.ComponentModel.Category("Входные данные"), System.ComponentModel.DisplayName(browserElementPropertie)]
-        public LTools.WebBrowser.BrowserInst Browser
+        [LTools.Common.Model.Studio.ValidateReturnScript(DataType = typeof(string))]
+        [System.ComponentModel.Category(ContainersData.InputCategoryName), System.ComponentModel.DisplayName(browserElementPropertie)] //ok
+        public string Browser
         {
-            get { return this.browser; }
-            set { this.browser = value; }
+            get { return this._browser; }
+            set { this._browser = value; this.InvokePropertyChanged(this, browserElementPropertie); }
         }
 
         #endregion
@@ -53,9 +55,10 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
                 new LTools.Common.Helpers.WFHelper.PropertiesItem()
                 {
                     PropName = browserElementPropertie,
-                    PropertyType = LTools.Common.Helpers.WFHelper.PropertiesItem.PropertyTypes.CUSTOM,
+                    PropertyType = LTools.Common.Helpers.WFHelper.PropertiesItem.PropertyTypes.VARIABLE, // ok
                     EditorType = ScriptEditorTypes.NONE,
-                    DataType = typeof(LTools.WebBrowser.BrowserInst), ToolTip = "Браузер с таблицей на открытой странице", IsReadOnly = false
+                    DataType = typeof(string), 
+                    ToolTip = "Браузер с таблицей на открытой странице", IsReadOnly = false
                 }
             };
             InitClass(container);
@@ -63,7 +66,7 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
 
         public override ExecutionResult SimpleAction(ScriptingData sd)
         {
-            string hasTable =  browser.Eval("document.getElementById('table').getElementsByTagName('tr').length");
+            string hasTable = GetPropertyValue<LTools.WebBrowser.BrowserInst>(this.Browser,browserElementPropertie,sd).Eval("document.getElementById('table').getElementsByTagName('tr').length");
             if (hasTable == "0") return new ExecutionResult() { IsSuccess = false, ErrorMessage = "На странице браузера нет таблицы" };
             else return new ExecutionResult() { IsSuccess = true, SuccessMessage = $"hasTable: {hasTable}" };
         }
@@ -71,8 +74,7 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
         public override ValidationResult Validate()
         {
             ValidationResult ret = new ValidationResult();
-
-            if(this.Browser == null) ret.Items.Add(new ValidationResult.ValidationItem() { PropertyName = browserElementPropertie, Error = "Браузер не выбран" });
+            //if(this.Browser == null) ret.Items.Add(new ValidationResult.ValidationItem() { PropertyName = browserElementPropertie, Error = "Браузер не выбран" });
 
             return ret;
         }
