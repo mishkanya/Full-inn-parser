@@ -1,0 +1,23 @@
+// 1.
+document.getElementById('table').getElementsByTagName('tr').length // 0 / > 0
+
+// 2.     num | court | plaintiff | respondent
+
+
+// Nums
+
+document.getElementById('table').getElementsByTagName('tr')[0].getElementsByClassName('num')[0].getElementsByTagName('span')[0].innerText // date
+document.getElementById('table').getElementsByTagName('tr')[0].getElementsByClassName('num')[0].getElementsByTagName('a')[0].innerText // number
+
+// court
+
+document.getElementById('table').getElementsByTagName('tr')[0].getElementsByClassName('court')[0].getElementsByClassName('judge')[0].innerText
+document.getElementById('table').getElementsByTagName('tr')[0].getElementsByClassName('court')[0].getElementsByClassName('b-container')[0].getElementsByTagName('div')[1].innerText
+
+// plaintiff
+
+document.getElementById('table').getElementsByTagName('tr')[0].getElementsByClassName('plaintiff')[0].innerText
+
+// respondent
+
+document.getElementById('table').getElementsByTagName('tr')[0].getElementsByClassName('respondent')[0].innerText

@@ -13,30 +13,30 @@ namespace Primo.GMCS.CounterpartyScoring.Models.SiteData.KadArbitr
         /// <summary>
         /// Дата обращения
         /// </summary>
-        public DateTime Date { get; set; }  
+        public DateTime Date { get; set; } //+
         /// <summary>
         /// Номер дела
         /// </summary>
-        public string Id { get; set; }
+        public string Id { get; set; } //+
         /// <summary>
         /// Судья
         /// </summary>
-        public string Judge { get; set; }
+        public string Judge { get; set; } //+
         /// <summary>
         /// Текущая инстанция 
         /// </summary>
-        public string Instance { get; set; }
+        public string Instance { get; set; } //+
         /// <summary>
         /// Истец
         /// </summary>
-        public string Plaintiff { get; set; }
+        public string Plaintiff { get; set; } //+
         /// <summary>
         /// Ответчик
         /// </summary>
-        public string Defendant { get; set; }
+        public string Defendant { get; set; } //+
         /// <summary>
         /// Категория
         /// </summary>
-        public KadArbitrTableElementType Type { get; set; }
+        public KadArbitrTableElementType Type { get; set; } //+
     }
 }
