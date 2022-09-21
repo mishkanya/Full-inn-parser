@@ -10,31 +10,41 @@ namespace Primo.GMCS.CounterpartyScoring.Models
     [Serializable]
     public class InnResult
     {
-        public InnResult(string inn)
-        {
-            Inn = inn;
-        }
         public string Inn { get; private set; }
 
-        #region parse results
-
-        public SiteData.BankrotFedresurResult BankrotFedresurResult { get; private set; }
-        public SiteData.EgrulNalogResult EgrulNalogResult { get; private set; }
-        public SiteData.EppGenprocGovResult EppGenprocGovResult { get; private set; }
-        public SiteData.KadArbitrResult KadArbitrResultBankrot { get; private set; }
-        public SiteData.KadArbitrResult KadArbitrResultNotBankrot { get; private set; }
-        public SiteData.NalogGovResult NalogGovResult { get; private set; }
-        public SiteData.PbNalogResult PbNalogResult { get; private set; }
-        public SiteData.ZakupkiGovResult ZakupkiGovResult { get; private set; }
-        
-        #endregion
-
-
-
-        public string GetJson()
+        public Dictionary<Type, SiteData.BaseResult> SitesData { get; private set; } = new Dictionary<Type, SiteData.BaseResult>()
         {
-            var jsonString = JsonConvert.SerializeObject(this);
-            return jsonString;
-        }
+            {
+                typeof(SiteData.BankrotFedresurResult), new SiteData.BankrotFedresurResult()
+            },
+            {
+                typeof(SiteData.EgrulNalogResult), new SiteData.EgrulNalogResult()
+            },
+            {
+                typeof(SiteData.EppGenprocGovResult), new SiteData.EppGenprocGovResult()
+            },
+            {
+                typeof(SiteData.KadArbitrNotBankrotResult), new SiteData.KadArbitrNotBankrotResult()
+            },
+            {
+                typeof(SiteData.KadArbitrBankrotResult), new SiteData.KadArbitrBankrotResult()
+            },
+            {
+                typeof(SiteData.NalogGovResult), new SiteData.NalogGovResult()
+            },
+            {
+                typeof(SiteData.PbNalogResult), new SiteData.PbNalogResult()
+            },
+            {
+                typeof(SiteData.ZakupkiGovResult), new SiteData.ZakupkiGovResult()
+            },
+        };
+
+        public InnResult(string inn) => Inn = inn;
+
+        public T GetSiteData<T>() where T : SiteData.BaseResult => (T)SitesData[typeof(T)];
+        public void SetSiteData<T>(T siteData) where T : SiteData.BaseResult => SitesData[typeof(T)] = siteData;
+        public string GetJson() => JsonConvert.SerializeObject(this);
+        
     }
 }

@@ -2,6 +2,7 @@
 using LTools.Common.UIElements;
 using LTools.SDK;
 using LTools.WebBrowser;
+using LTools.WebBrowser.Elements;
 using LTools.WebBrowser.InternetExplorer;
 using Primo.GMCS.CounterpartyScoring.Activities.Elements.View;
 using System;
@@ -23,6 +24,8 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
             get => ContainersData.SitesGroupName;
             protected set { }
         }
+
+        private IWFContainer _container;
 
         #region properties
         /// <summary>
@@ -49,7 +52,7 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
         /// Отображение переменной в студии
         /// </summary>
         [LTools.Common.Model.Serialization.StoringProperty]
-        [LTools.Common.Model.Studio.ValidateReturnScript(DataType = typeof(List<Models.SiteData.KadArbitr.TableResult>))]
+        [LTools.Common.Model.Studio.ValidateReturnScript(DataType = typeof(IEnumerable<Models.SiteData.KadArbitr.TableResult>))]
         [System.ComponentModel.Category(ContainersData.OUTPUT_CATEGORY_NAME), System.ComponentModel.DisplayName(OUT_LIST_RESULT)] //ok
         public string Result
         {
@@ -66,12 +69,14 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
             {"administrative", Models.Enums.KadArbitrTableElementType.Administrative},
             {"bankruptcy", Models.Enums.KadArbitrTableElementType.Bankrot},
         };
-        
+
         public PrimoDataFromKadArbitrTableBack(IWFContainer container) : base(container)
         {
-            sdkComponentName = "Получить данные с сайта";
+            this._container = container;
+            sdkComponentName = "Получить данные с kad.arbitr.ru";
             sdkComponentHelp = "Получение списка строк из таблицы на сайте https://kad.arbitr.ru/";
             sdkComponentIcon = ContainersData.ICON_PATH;
+
             sdkProperties = new List<LTools.Common.Helpers.WFHelper.PropertiesItem>()
             {
                 new LTools.Common.Helpers.WFHelper.PropertiesItem()
@@ -97,9 +102,22 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
 
         public override ExecutionResult SimpleAction(ScriptingData sd)
         {
-            var browser = GetPropertyValue<LTools.WebBrowser.BrowserInst>(this.Browser, BROWSER_ELEMENT_PROPERTIE, sd);
 
-            if (browser == null) return new ExecutionResult() { IsSuccess = false, ErrorMessage = "На странице браузера нет таблицы" };
+            BrowserInst browser = null;
+
+            if (string.IsNullOrEmpty(this.Browser) == false)
+                browser = GetPropertyValue<LTools.WebBrowser.BrowserInst>(this.Browser, BROWSER_ELEMENT_PROPERTIE, sd);
+
+            if (browser == null)
+            {
+                browser = GetContainerOfType<WFOpenBrowser>(_container)?.Browser;
+                if (browser == null)
+                    browser = GetContainerOfType<WFAttachBrowser>(_container)?.Browser;
+                if (browser == null)
+                    return new ExecutionResult() { IsSuccess = false, ErrorMessage = "Браузер не обнаружен!" };
+
+                SetVariableValue<BrowserInst>(Browser, browser, sd);
+            }
 
             string rowCountStr = browser.Eval("document.getElementById('table').getElementsByTagName('tr').length");
 
@@ -133,8 +151,6 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
                 else
                 {
                     instance = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('court')[0].getElementsByClassName('b-container')[0].getElementsByTagName('div')[1].innerText");
-
-
                 }
                 string plaintiff = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('plaintiff')[0].innerText");
                 string defendant = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('respondent')[0].innerText");
@@ -154,16 +170,15 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
 
                 result.Add(row);
             }
-            SetVariableValue<List<Models.SiteData.KadArbitr.TableResult>>(Result, result, sd);
+            SetVariableValue<IEnumerable<Models.SiteData.KadArbitr.TableResult>>(Result, result, sd);
             return new ExecutionResult() { IsSuccess = true, SuccessMessage = $"result: {result.Count}" };
+
         }
+
 
         public override ValidationResult Validate()
         {
             ValidationResult ret = new ValidationResult();
-
-            if (String.IsNullOrEmpty(this.Browser)) ret.Items.Add(new ValidationResult.ValidationItem() { PropertyName = BROWSER_ELEMENT_PROPERTIE, Error = "Браузер не выбран" });
-
             return ret;
         }
     }

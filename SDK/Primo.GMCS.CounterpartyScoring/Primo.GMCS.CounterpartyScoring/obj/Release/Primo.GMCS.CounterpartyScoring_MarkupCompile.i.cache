@@ -10,11 +10,11 @@ none
 false
 TRACE
 
-1192576836
+4-2014756961
 
-16612277719
-134282559310
-Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;
+26730092029
+135-768302282
+Activities\Elements\Setters\View\PrimoDataSetterBase.xaml;Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml;Activities\Elements\Setters\View\PrimoSetPbNalogData.xaml;Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;
 
-False
+True
 
