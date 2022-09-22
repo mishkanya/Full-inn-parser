@@ -15,16 +15,14 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back
 {
     public class PrimoSetKadArbitrDataBack : PrimoDataSetterBaseBack<KadArbitrNotBankrotResult, PrimoSetKadArbitrData>
     {
-        protected override string _sdkComponentHelp => "testw";
         protected override string _sdkComponentName=> "Вставить данные с сайта https://kad.arbitr.ru/";
         public PrimoSetKadArbitrDataBack(IWFContainer container) : base(container)
         {
 
         }
-
         public override ExecutionResult SimpleAction(ScriptingData sd)
         {   
-            if(TryGetMainPropertie(sd, out KadArbitrNotBankrotResult data)) 
+            if(TryGetMainPropertie(sd, out KadArbitrNotBankrotResult data) == false) 
                 return new ExecutionResult() { IsSuccess = false, ErrorMessage = "Объект не должен равнятья null!" };
 
             _resultContainer.SetData<Models.SiteData.KadArbitrNotBankrotResult>(data, sd);
@@ -39,6 +37,11 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back
         {
             ValidationResult ret = new ValidationResult();
             return ret;
+        }
+
+        protected override PrimoDataSetterBaseBack<KadArbitrNotBankrotResult, PrimoSetKadArbitrData> CreateNewObject(IWFContainer container)
+        {
+            return new PrimoSetKadArbitrDataBack(container);
         }
     }
 }

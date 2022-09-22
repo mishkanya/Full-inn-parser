@@ -129,13 +129,16 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
 
             for (int i = 0; i < rowCount; i++)
             {
-                string dateStr = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('num')[0].getElementsByTagName('span')[0].innerText");
+                string jsRequestStart = $"document.getElementById('table').getElementsByTagName('tr')[{i}]";
 
-                string number = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('num')[0].getElementsByTagName('a')[0].innerText");
+                string dateStr = browser.Eval($"{jsRequestStart}.getElementsByClassName('num')[0].getElementsByTagName('span')[0].innerText");
+                string number = browser.Eval($"{jsRequestStart}.getElementsByClassName('num')[0].getElementsByTagName('a')[0].innerText");
+                string link = browser.Eval($"{jsRequestStart}.getElementsByClassName('num')[0].getElementsByTagName('a')[0].href");
                 string judge;
+
                 try
                 {
-                    judge = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('court')[0].getElementsByClassName('judge')[0].innerText");
+                    judge = browser.Eval($"{jsRequestStart}.getElementsByClassName('court')[0].getElementsByClassName('judge')[0].innerText");
 
                 }
                 catch
@@ -145,16 +148,16 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
                 string instance;
                 if (judge == null)
                 {
-                    instance = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('court')[0].getElementsByClassName('b-container')[0].getElementsByTagName('div')[0].innerText");
+                    instance = browser.Eval($"{jsRequestStart}.getElementsByClassName('court')[0].getElementsByClassName('b-container')[0].getElementsByTagName('div')[0].innerText");
 
                 }
                 else
                 {
-                    instance = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('court')[0].getElementsByClassName('b-container')[0].getElementsByTagName('div')[1].innerText");
+                    instance = browser.Eval($"{jsRequestStart}.getElementsByClassName('court')[0].getElementsByClassName('b-container')[0].getElementsByTagName('div')[1].innerText");
                 }
-                string plaintiff = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('plaintiff')[0].innerText");
-                string defendant = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('respondent')[0].innerText");
-                string typeStr = browser.Eval($"document.getElementById('table').getElementsByTagName('tr')[{i}].getElementsByClassName('num')[0].getElementsByTagName('div')[1].className");
+                string plaintiff = browser.Eval($"{jsRequestStart}.getElementsByClassName('plaintiff')[0].innerText");
+                string defendant = browser.Eval($"{jsRequestStart}.getElementsByClassName('respondent')[0].innerText");
+                string typeStr = browser.Eval($"{jsRequestStart}.getElementsByClassName('num')[0].getElementsByTagName('div')[1].className");
 
 
                 var row = new Models.SiteData.KadArbitr.TableResult()
@@ -165,7 +168,8 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
                     Instance = instance,
                     Plaintiff = plaintiff,
                     Defendant = defendant,
-                    Type = _kadArbitrTypesDict[typeStr]
+                    Type = _kadArbitrTypesDict[typeStr],
+                    Link = link
                 };
 
                 result.Add(row);

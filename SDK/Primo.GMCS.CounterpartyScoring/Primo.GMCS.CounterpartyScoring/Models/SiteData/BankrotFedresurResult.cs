@@ -11,5 +11,6 @@ namespace Primo.GMCS.CounterpartyScoring.Models.SiteData
     /// </summary>
     public class BankrotFedresurResult : BaseResult
     {
+        public string Json { get; set; }
     }
 }

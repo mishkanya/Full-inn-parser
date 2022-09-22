@@ -298,3 +298,7 @@ C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.Cou
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\bin\Release\ru\DevExpress.Xpo.v20.1.resources.dll
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Activities\Elements\Setters\View\PrimoSetPbNalogData.g.cs
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Activities\Elements\Setters\View\PrimoSetPbNalogData.baml
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Activities\Elements\View\PrimoPBNalogGetJson.g.cs
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Activities\Elements\View\PrimoPBNalogGetJson.baml
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Activities\Elements\View\PrimoFedresursGetJson.g.cs
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Release\Activities\Elements\View\PrimoFedresursGetJson.baml

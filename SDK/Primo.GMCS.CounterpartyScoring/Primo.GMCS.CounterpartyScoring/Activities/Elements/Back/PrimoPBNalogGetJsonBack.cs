@@ -23,7 +23,7 @@ using Primo.GMCS.CounterpartyScoring.Models.SiteData.PBNalog;
 
 namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
 {
-    public class PrimoPBNalogGetJsonBack : PrimoComponentSimple<PrimoDataFromKadArbitrTable>
+    public class PrimoPBNalogGetJsonBack : PrimoComponentSimple<PrimoPBNalogGetJson>
     {
         public override string GroupName
         {

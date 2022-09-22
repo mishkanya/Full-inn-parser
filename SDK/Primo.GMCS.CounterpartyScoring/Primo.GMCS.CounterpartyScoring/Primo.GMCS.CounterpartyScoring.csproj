@@ -100,12 +100,17 @@
     <Compile Include="Activities\ContainersData.cs" />
     <Compile Include="Activities\Containers\Back\PrimoInnResultContainerBack.cs" />
     <Compile Include="Activities\Elements\Back\PrimoDataFromKadArbitrTableBack.cs" />
+    <Compile Include="Activities\Elements\Back\PrimoFedresursGetJsonBack.cs" />
     <Compile Include="Activities\Elements\Back\PrimoPBNalogGetJsonBack.cs" />
     <Compile Include="Activities\Elements\Setters\Back\PrimoDataSetterBaseBack.cs" />
+    <Compile Include="Activities\Elements\Setters\Back\PrimoSetFedresursDataBack.cs" />
     <Compile Include="Activities\Elements\Setters\Back\PrimoSetKadArbitrDataBack.cs" />
     <Compile Include="Activities\Elements\Setters\Back\PrimoSetPbNalogDataBack.cs" />
     <Compile Include="Activities\Elements\Setters\View\PrimoDataSetterBase.xaml.cs">
       <DependentUpon>PrimoDataSetterBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\Elements\Setters\View\PrimoSetFedresursData.xaml.cs">
+      <DependentUpon>PrimoSetFedresursData.xaml</DependentUpon>
     </Compile>
     <Compile Include="Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml.cs">
       <DependentUpon>PrimoSetKadArbitrData.xaml</DependentUpon>
@@ -115,6 +120,12 @@
     </Compile>
     <Compile Include="Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml.cs">
       <DependentUpon>PrimoDataFromKadArbitrTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\Elements\View\PrimoFedresursGetJson.xaml.cs">
+      <DependentUpon>PrimoFedresursGetJson.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\Elements\View\PrimoPBNalogGetJson.xaml.cs">
+      <DependentUpon>PrimoPBNalogGetJson.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Enums\KadArbitrTableElementType.cs" />
     <Compile Include="Models\InnResult.cs" />
@@ -143,6 +154,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Activities\Elements\Setters\View\PrimoSetFedresursData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -152,6 +167,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Activities\Elements\View\PrimoFedresursGetJson.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Activities\Elements\View\PrimoPBNalogGetJson.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

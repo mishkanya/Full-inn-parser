@@ -39,7 +39,7 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back
         #endregion
 
         protected virtual string _sdkComponentName { get => "Base Name"; }
-        protected virtual string _sdkComponentHelp { get => "Base Description"; }
+        protected virtual string _sdkComponentHelp { get => "Должен распологаться в контейнере PrimoInnResultContainer"; }
 
        
         public PrimoDataSetterBaseBack(IWFContainer container) : base(container)
@@ -71,15 +71,17 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back
 
         public override ExecutionResult SimpleAction(ScriptingData sd) => new ExecutionResult() { IsSuccess = false, SuccessMessage = "Метод не перегружен" };
 
+        protected abstract PrimoDataSetterBaseBack<T, U> CreateNewObject(IWFContainer container);
+
         public override IWFComponent ProduceControl(IWFContainer container)
         {
             if (GetContainerOfType<PrimoInnResultContainerBack>(container) == null)
             {
                 PrimoInnResultContainerBack db = new PrimoInnResultContainerBack(container);
-                db.AddComponent(new PrimoSetKadArbitrDataBack(db), null);
+                db.AddComponent(CreateNewObject(db), null);
                 return db;
             }
-            return new PrimoSetKadArbitrDataBack(container);
+            return CreateNewObject(container);
         }
 
         public override bool IsAllowedMoveToContainer(IWFContainer container)

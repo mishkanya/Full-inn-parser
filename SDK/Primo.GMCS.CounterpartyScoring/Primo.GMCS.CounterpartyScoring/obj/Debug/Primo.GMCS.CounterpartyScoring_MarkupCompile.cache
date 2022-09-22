@@ -4,17 +4,17 @@
 library
 C#
 .cs
-c:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\
 Primo.GMCS.CounterpartyScoring
 none
 false
 DEBUG;TRACE
 
-1192576836
+7723911910
 
-16-1780985419
-134451687022
-Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;
+30-343367760
+135-768302282
+Activities\Elements\Setters\View\PrimoDataSetterBase.xaml;Activities\Elements\Setters\View\PrimoSetFedresursData.xaml;Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml;Activities\Elements\Setters\View\PrimoSetPbNalogData.xaml;Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;Activities\Elements\View\PrimoFedresursGetJson.xaml;Activities\Elements\View\PrimoPBNalogGetJson.xaml;
 
-True
+False
 

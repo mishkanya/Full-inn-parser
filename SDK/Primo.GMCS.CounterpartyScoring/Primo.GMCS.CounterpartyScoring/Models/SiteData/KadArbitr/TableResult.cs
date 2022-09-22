@@ -34,6 +34,7 @@ namespace Primo.GMCS.CounterpartyScoring.Models.SiteData.KadArbitr
         /// Ответчик
         /// </summary>
         public string Defendant { get; set; } //+
+        public string Link { get; set; }
         /// <summary>
         /// Категория
         /// </summary>

@@ -13,7 +13,6 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back
 {
     public class PrimoSetPbNalogDataBack : PrimoDataSetterBaseBack<PbNalogResult, PrimoSetPbNalogData>
     {
-        protected override string _sdkComponentHelp => "tests";
         protected override string _sdkComponentName => "Вставить данные с сайта pb.nalog.ru";
         public PrimoSetPbNalogDataBack(IWFContainer container) : base(container)
         {
@@ -22,7 +21,7 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back
 
         public override ExecutionResult SimpleAction(ScriptingData sd)
         {
-            if (TryGetMainPropertie(sd, out PbNalogResult data))
+            if (TryGetMainPropertie(sd, out PbNalogResult data) == false)
                 return new ExecutionResult() { IsSuccess = false, ErrorMessage = "Объект не должен равнятья null!" };
 
             _resultContainer.SetData<Models.SiteData.PbNalogResult>(data, sd);
@@ -32,6 +31,11 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back
         {
             ValidationResult ret = new ValidationResult();
             return ret;
+        }
+
+        protected override PrimoDataSetterBaseBack<PbNalogResult, PrimoSetPbNalogData> CreateNewObject(IWFContainer container)
+        {
+            return new PrimoSetPbNalogDataBack(container);
         }
     }
 }

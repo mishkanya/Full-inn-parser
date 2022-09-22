@@ -10,11 +10,11 @@ none
 false
 TRACE
 
-4-2014756961
+6766841823
 
-26730092029
+29-850292203
 135-768302282
-Activities\Elements\Setters\View\PrimoDataSetterBase.xaml;Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml;Activities\Elements\Setters\View\PrimoSetPbNalogData.xaml;Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;
+Activities\Elements\Setters\View\PrimoDataSetterBase.xaml;Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml;Activities\Elements\Setters\View\PrimoSetPbNalogData.xaml;Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;Activities\Elements\View\PrimoFedresursGetJson.xaml;Activities\Elements\View\PrimoPBNalogGetJson.xaml;
 
 True
 
