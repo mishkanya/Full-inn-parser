@@ -278,3 +278,7 @@ C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.Cou
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Primo.GMCS.CounterpartyScoring.pdb
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\Setters\View\PrimoSetFedresursData.g.cs
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\Setters\View\PrimoSetFedresursData.baml
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\Setters\View\PrimoSetZakupkiGovData.g.cs
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\View\PrimoDataFromZakupkiGov.g.cs
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\Setters\View\PrimoSetZakupkiGovData.baml
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\View\PrimoDataFromZakupkiGov.baml

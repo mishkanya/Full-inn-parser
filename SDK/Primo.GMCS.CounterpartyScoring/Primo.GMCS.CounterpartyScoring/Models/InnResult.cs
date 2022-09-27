@@ -21,16 +21,10 @@ namespace Primo.GMCS.CounterpartyScoring.Models
                 typeof(SiteData.EgrulNalogResult), new SiteData.EgrulNalogResult()
             },
             {
-                typeof(SiteData.EppGenprocGovResult), new SiteData.EppGenprocGovResult()
-            },
-            {
                 typeof(SiteData.KadArbitrNotBankrotResult), new SiteData.KadArbitrNotBankrotResult()
             },
             {
                 typeof(SiteData.KadArbitrBankrotResult), new SiteData.KadArbitrBankrotResult()
-            },
-            {
-                typeof(SiteData.NalogGovResult), new SiteData.NalogGovResult()
             },
             {
                 typeof(SiteData.PbNalogResult), new SiteData.PbNalogResult()

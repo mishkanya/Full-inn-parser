@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-7723911910
+9113738382
 
-31-1820272208
+33-507143306
 135-768302282
-Activities\Elements\Setters\View\PrimoDataSetterBase.xaml;Activities\Elements\Setters\View\PrimoSetFedresursData.xaml;Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml;Activities\Elements\Setters\View\PrimoSetPbNalogData.xaml;Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;Activities\Elements\View\PrimoFedresursGetJson.xaml;Activities\Elements\View\PrimoPBNalogGetJson.xaml;
+Activities\Elements\Setters\View\PrimoDataSetterBase.xaml;Activities\Elements\Setters\View\PrimoSetFedresursData.xaml;Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml;Activities\Elements\Setters\View\PrimoSetPbNalogData.xaml;Activities\Elements\Setters\View\PrimoSetZakupkiGovData.xaml;Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;Activities\Elements\View\PrimoDataFromZakupkiGov.xaml;Activities\Elements\View\PrimoFedresursGetJson.xaml;Activities\Elements\View\PrimoPBNalogGetJson.xaml;
 
-True
+False
 
