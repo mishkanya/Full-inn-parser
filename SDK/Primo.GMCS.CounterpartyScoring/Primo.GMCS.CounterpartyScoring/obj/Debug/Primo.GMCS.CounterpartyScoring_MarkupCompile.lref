@@ -1,6 +1,7 @@
 ﻿
 
 FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\Setters\View\PrimoDataSetterBase.xaml;;
+FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\Setters\View\PrimoSetEgrulNalogData.xaml;;
 FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\Setters\View\PrimoSetFedresursData.xaml;;
 FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml;;
 FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\Setters\View\PrimoSetPbNalogData.xaml;;
@@ -8,5 +9,6 @@ FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.Co
 FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;;
 FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\View\PrimoDataFromZakupkiGov.xaml;;
 FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\View\PrimoFedresursGetJson.xaml;;
+FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\View\PrimoParseEgrulNalogPDF.xaml;;
 FC:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\Activities\Elements\View\PrimoPBNalogGetJson.xaml;;
 

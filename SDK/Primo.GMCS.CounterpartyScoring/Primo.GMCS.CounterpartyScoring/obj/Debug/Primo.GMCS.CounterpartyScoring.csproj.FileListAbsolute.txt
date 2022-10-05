@@ -282,3 +282,8 @@ C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.Cou
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\View\PrimoDataFromZakupkiGov.g.cs
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\Setters\View\PrimoSetZakupkiGovData.baml
 C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\View\PrimoDataFromZakupkiGov.baml
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Primo.GMCS.CounterpartyScoring.csproj.ResolveComReference.cache
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\View\PrimoParseEgrulNalogPDF.g.cs
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\View\PrimoParseEgrulNalogPDF.baml
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\Setters\View\PrimoSetEgrulNalogData.g.cs
+C:\Users\ymedvedenko\Documents\Primo projects\Full inn parser\SDK\Primo.GMCS.CounterpartyScoring\Primo.GMCS.CounterpartyScoring\obj\Debug\Activities\Elements\Setters\View\PrimoSetEgrulNalogData.baml

@@ -102,14 +102,19 @@
     <Compile Include="Activities\Elements\Back\PrimoDataFromKadArbitrTableBack.cs" />
     <Compile Include="Activities\Elements\Back\PrimoDataFromZakupkiGovBack.cs" />
     <Compile Include="Activities\Elements\Back\PrimoFedresursGetJsonBack.cs" />
+    <Compile Include="Activities\Elements\Back\PrimoParseEgrulNalogPDFBack.cs" />
     <Compile Include="Activities\Elements\Back\PrimoPBNalogGetJsonBack.cs" />
     <Compile Include="Activities\Elements\Setters\Back\PrimoDataSetterBaseBack.cs" />
+    <Compile Include="Activities\Elements\Setters\Back\PrimoSetEgrulNalogDataBack.cs" />
     <Compile Include="Activities\Elements\Setters\Back\PrimoSetFedresursDataBack.cs" />
     <Compile Include="Activities\Elements\Setters\Back\PrimoSetKadArbitrDataBack.cs" />
     <Compile Include="Activities\Elements\Setters\Back\PrimoSetPbNalogDataBack.cs" />
     <Compile Include="Activities\Elements\Setters\Back\PrimoSetZakupkiGovDataBack.cs" />
     <Compile Include="Activities\Elements\Setters\View\PrimoDataSetterBase.xaml.cs">
       <DependentUpon>PrimoDataSetterBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\Elements\Setters\View\PrimoSetEgrulNalogData.xaml.cs">
+      <DependentUpon>PrimoSetEgrulNalogData.xaml</DependentUpon>
     </Compile>
     <Compile Include="Activities\Elements\Setters\View\PrimoSetFedresursData.xaml.cs">
       <DependentUpon>PrimoSetFedresursData.xaml</DependentUpon>
@@ -132,6 +137,9 @@
     <Compile Include="Activities\Elements\View\PrimoFedresursGetJson.xaml.cs">
       <DependentUpon>PrimoFedresursGetJson.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Activities\Elements\View\PrimoParseEgrulNalogPDF.xaml.cs">
+      <DependentUpon>PrimoParseEgrulNalogPDF.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Activities\Elements\View\PrimoPBNalogGetJson.xaml.cs">
       <DependentUpon>PrimoPBNalogGetJson.xaml</DependentUpon>
     </Compile>
@@ -139,6 +147,10 @@
     <Compile Include="Models\InnResult.cs" />
     <Compile Include="Models\SiteData\BankrotFedresurResult.cs" />
     <Compile Include="Models\SiteData\EgrulNalogResult.cs" />
+    <Compile Include="Models\SiteData\EgrulNalog\Fillial.cs" />
+    <Compile Include="Models\SiteData\EgrulNalog\Organization.cs" />
+    <Compile Include="Models\SiteData\EgrulNalog\Parser.cs" />
+    <Compile Include="Models\SiteData\EgrulNalog\Person.cs" />
     <Compile Include="Models\SiteData\KadArbitrBankrotResult.cs" />
     <Compile Include="Models\SiteData\KadArbitrNotBankrotResult.cs" />
     <Compile Include="Models\SiteData\KadArbitr\TableResult.cs" />
@@ -157,6 +169,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Activities\Elements\Setters\View\PrimoDataSetterBase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Activities\Elements\Setters\View\PrimoSetEgrulNalogData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -188,6 +204,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Activities\Elements\View\PrimoParseEgrulNalogPDF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Activities\Elements\View\PrimoPBNalogGetJson.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -195,6 +215,35 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

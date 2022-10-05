@@ -29,7 +29,7 @@
             <SerializationItem>
                 <IsListValue>false</IsListValue>
                 <Name>ComponentID</Name>
-                <Value xmlns:q1="http://microsoft.com/wsdl/types/" xsi:type="q1:guid">9bcd4255-9603-47ff-80bd-e67fbd62f71c</Value>
+                <Value xmlns:q1="http://microsoft.com/wsdl/types/" xsi:type="q1:guid">7b1abc23-b992-46ea-a171-d2144e8e51f3</Value>
             </SerializationItem>
             <SerializationItem>
                 <IsListValue>false</IsListValue>
@@ -74,27 +74,26 @@
         </Properties>
         <Components>
             <SerializationComponent>
-                <ClassName>LTools.Workflow.Elements.WFAssign</ClassName>
-                <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <ClassName>Primo.GMCS.CounterpartyScoring.Activities.Elements.Back.PrimoDataFromKadArbitrTableBack</ClassName>
+                <AssemblyName>Primo.GMCS.CounterpartyScoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
                 <Properties>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
-                        <Name>Variable</Name>
-                        <Value xsi:type="xsd:string">Inns</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>Data</Name>
-                        <Value xsi:type="xsd:string">new string[]{"7107003303", "7708252625"}</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
                         <Name>ComponentName</Name>
-                        <Value xsi:type="xsd:string">Присвоение</Value>
+                        <Value xsi:type="xsd:string">Получить данные с kad.arbitr.ru</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>Annotation</Name>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>Browser</Name>
+                        <Value xsi:type="xsd:string">browser</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>Result</Name>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -103,7 +102,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>ComponentID</Name>
-                        <Value xmlns:q2="http://microsoft.com/wsdl/types/" xsi:type="q2:guid">19fe17cb-750c-48c7-a076-1f2e667c0f5e</Value>
+                        <Value xmlns:q2="http://microsoft.com/wsdl/types/" xsi:type="q2:guid">03a69a06-54c1-458c-bb0e-533a3725facf</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -152,10 +151,10 @@
     <GlobalVariables />
     <Arguments>
         <ScriptVariable>
-            <Name>Inns</Name>
-            <Group>MainObjects</Group>
-            <DataTypeString>string[]</DataTypeString>
-            <Direction>OUT</Direction>
+            <Name>browser</Name>
+            <Group>Browser</Group>
+            <DataTypeString>LTools.WebBrowser.BrowserInst</DataTypeString>
+            <Direction>IN</Direction>
         </ScriptVariable>
     </Arguments>
 </SerializationRoot>
