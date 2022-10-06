@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 11824986491
 
-41-83022352
+401393882096
 138675360636
 Activities\Elements\Setters\View\PrimoDataSetterBase.xaml;Activities\Elements\Setters\View\PrimoSetEgrulNalogData.xaml;Activities\Elements\Setters\View\PrimoSetFedresursData.xaml;Activities\Elements\Setters\View\PrimoSetKadArbitrData.xaml;Activities\Elements\Setters\View\PrimoSetPbNalogData.xaml;Activities\Elements\Setters\View\PrimoSetZakupkiGovData.xaml;Activities\Elements\View\PrimoDataFromKadArbitrTable.xaml;Activities\Elements\View\PrimoDataFromZakupkiGov.xaml;Activities\Elements\View\PrimoFedresursGetJson.xaml;Activities\Elements\View\PrimoParseEgrulNalogPDF.xaml;Activities\Elements\View\PrimoPBNalogGetJson.xaml;
 
-True
+False
 

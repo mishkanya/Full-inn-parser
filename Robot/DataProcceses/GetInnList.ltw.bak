@@ -85,7 +85,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>Data</Name>
-                        <Value xsi:type="xsd:string">new string[]{"7107003303", "7708252625"}</Value>
+                        <Value xsi:type="xsd:string">new string[]{"7708252625", "7107003303"}</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>

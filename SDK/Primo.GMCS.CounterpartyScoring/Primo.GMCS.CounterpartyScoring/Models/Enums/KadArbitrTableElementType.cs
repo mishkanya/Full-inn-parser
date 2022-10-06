@@ -12,7 +12,11 @@ namespace Primo.GMCS.CounterpartyScoring.Models.Enums
     public enum KadArbitrTableElementType
     {
         Bankrot,
+        BankrotSimple,
         Administrative,
-        Civil
+        AdministrativeSimple,
+        Civil,
+        CivilSimple,
+        Default
     }
 }

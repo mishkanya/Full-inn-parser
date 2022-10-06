@@ -66,8 +66,12 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
         private Dictionary<string, Models.Enums.KadArbitrTableElementType> _kadArbitrTypesDict = new Dictionary<string, Models.Enums.KadArbitrTableElementType>
         {
             {"civil", Models.Enums.KadArbitrTableElementType.Civil},
+            {"civil_simple", Models.Enums.KadArbitrTableElementType.CivilSimple},
             {"administrative", Models.Enums.KadArbitrTableElementType.Administrative},
+            {"administrative_simple", Models.Enums.KadArbitrTableElementType.AdministrativeSimple},
             {"bankruptcy", Models.Enums.KadArbitrTableElementType.Bankrot},
+            {"bankruptcy_simple", Models.Enums.KadArbitrTableElementType.BankrotSimple},
+            {"default", Models.Enums.KadArbitrTableElementType.Default},
         };
 
         public PrimoDataFromKadArbitrTableBack(IWFContainer container) : base(container)
@@ -174,7 +178,7 @@ namespace Primo.GMCS.CounterpartyScoring.Activities.Elements.Back
 
                 result.Add(row);
             }
-            SetVariableValue<IEnumerable<Models.SiteData.KadArbitr.TableResult>>(Result, result, sd);
+            SetVariableValue<IEnumerable<Models.SiteData.KadArbitr.TableResult>>(Result, (IEnumerable<Models.SiteData.KadArbitr.TableResult>)result, sd);
             return new ExecutionResult() { IsSuccess = true, SuccessMessage = $"result: {result.Count}" };
 
         }
