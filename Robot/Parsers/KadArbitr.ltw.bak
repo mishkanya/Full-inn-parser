@@ -133,7 +133,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>IsCollapsed</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
+                        <Value xsi:type="xsd:boolean">true</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>

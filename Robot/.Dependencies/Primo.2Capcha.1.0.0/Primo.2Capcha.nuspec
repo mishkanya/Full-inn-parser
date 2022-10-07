@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Primo.2Capcha</id>
+    <version>1.0.0</version>
+    <title>Primo.2Capcha</title>
+    <authors>Rondem</authors>
+    <owners></owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://docs.primo-rpa.ru/primo-rpa/</projectUrl>
+    <description>Primo RPA 2Capcha integration elements</description>
+    <copyright>Rondem, 2021</copyright>
+    <language>en, ru</language>
+    <tags>RPA, Primo, 2Capcha</tags>
+  </metadata>
+</package>

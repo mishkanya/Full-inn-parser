@@ -73,6 +73,167 @@
             </SerializationItem>
         </Properties>
         <Components>
+            <SerializationComponent xsi:type="SerializationContainer">
+                <ClassName>LTools.Workflow.Elements.WFContainerSequence</ClassName>
+                <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <Properties>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>ComponentName</Name>
+                        <Value xsi:type="xsd:string">Инициализация переменных</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>Annotation</Name>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>TextTag</Name>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>Variables</Name>
+                        <Value xsi:type="ArrayOfScriptVariable" />
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>ComponentID</Name>
+                        <Value xmlns:q2="http://microsoft.com/wsdl/types/" xsi:type="q2:guid">6aebddca-825a-41cd-b4d9-2f56cf94d996</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>ContinueOnException</Name>
+                        <Value xsi:type="xsd:boolean">false</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>PreventLogging</Name>
+                        <Value xsi:type="xsd:boolean">false</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>SSSuccess</Name>
+                        <Value xsi:type="xsd:boolean">false</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>SSFail</Name>
+                        <Value xsi:type="xsd:boolean">false</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>true</IsListValue>
+                        <Name>NoCodeProperties</Name>
+                        <ListValue />
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>NoCodeUsed</Name>
+                        <Value xsi:type="xsd:boolean">false</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>IsCollapsed</Name>
+                        <Value xsi:type="xsd:boolean">true</Value>
+                    </SerializationItem>
+                    <SerializationItem>
+                        <IsListValue>false</IsListValue>
+                        <Name>ShowAnnotation</Name>
+                        <Value xsi:type="xsd:boolean">false</Value>
+                    </SerializationItem>
+                </Properties>
+                <Components>
+                    <SerializationComponent>
+                        <ClassName>LTools.Workflow.Elements.WFMultipleAssign</ClassName>
+                        <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                        <Properties>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ComponentName</Name>
+                                <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Annotation</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>true</IsListValue>
+                                <Name>Items</Name>
+                                <ListValue>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>Items</Name>
+                                        <Value xsi:type="MultipleAssignItem">
+                                            <Variable>CapchaApiKey</Variable>
+                                            <IsNoCodeVariable>false</IsNoCodeVariable>
+                                            <Assign>"0c9f5ae3587103c53604885c2af49224"</Assign>
+                                            <IsNoCodeAssign>false</IsNoCodeAssign>
+                                        </Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>Items</Name>
+                                        <Value xsi:type="MultipleAssignItem">
+                                            <Variable>DownloadFolder</Variable>
+                                            <IsNoCodeVariable>false</IsNoCodeVariable>
+                                            <Assign>@"C:\Users\ymedvedenko\Downloads"</Assign>
+                                            <IsNoCodeAssign>false</IsNoCodeAssign>
+                                        </Value>
+                                    </SerializationItem>
+                                </ListValue>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>TextTag</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ComponentID</Name>
+                                <Value xmlns:q3="http://microsoft.com/wsdl/types/" xsi:type="q3:guid">1b8043c5-c58a-4939-9453-f2e4eebc6cf5</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ContinueOnException</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>PreventLogging</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SSSuccess</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SSFail</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>true</IsListValue>
+                                <Name>NoCodeProperties</Name>
+                                <ListValue />
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>NoCodeUsed</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>IsCollapsed</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ShowAnnotation</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                        </Properties>
+                    </SerializationComponent>
+                </Components>
+            </SerializationComponent>
             <SerializationComponent>
                 <ClassName>LTools.Workflow.Elements.WFSequenceLink</ClassName>
                 <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
@@ -145,7 +306,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>ComponentID</Name>
-                        <Value xmlns:q2="http://microsoft.com/wsdl/types/" xsi:type="q2:guid">908512f5-ca81-4378-a26b-d056fdf94560</Value>
+                        <Value xmlns:q4="http://microsoft.com/wsdl/types/" xsi:type="q4:guid">908512f5-ca81-4378-a26b-d056fdf94560</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -259,6 +420,20 @@
                                 <DataTypeString>System.Collections.Generic.List&lt;Primo.GMCS.CounterpartyScoring.Models.InnResult&gt;</DataTypeString>
                                 <Direction>OUT</Direction>
                             </ScriptVariable>
+                            <ScriptVariable>
+                                <Name>CapchaApiKey</Name>
+                                <Group />
+                                <DefaultValue xsi:type="xsd:string">CapchaApiKey</DefaultValue>
+                                <DataTypeString>System.String</DataTypeString>
+                                <Direction>IN</Direction>
+                            </ScriptVariable>
+                            <ScriptVariable>
+                                <Name>DownloadFolder</Name>
+                                <Group />
+                                <DefaultValue xsi:type="xsd:string">DownloadFolder</DefaultValue>
+                                <DataTypeString>System.String</DataTypeString>
+                                <Direction>IN</Direction>
+                            </ScriptVariable>
                         </Value>
                     </SerializationItem>
                     <SerializationItem>
@@ -268,7 +443,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>ComponentID</Name>
-                        <Value xmlns:q3="http://microsoft.com/wsdl/types/" xsi:type="q3:guid">8cda8534-7fe6-4b4a-b54c-270c3c2b3969</Value>
+                        <Value xmlns:q5="http://microsoft.com/wsdl/types/" xsi:type="q5:guid">8cda8534-7fe6-4b4a-b54c-270c3c2b3969</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -342,7 +517,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>ComponentID</Name>
-                        <Value xmlns:q4="http://microsoft.com/wsdl/types/" xsi:type="q4:guid">c9b31616-009b-478c-bdf2-ddf3fe6151e8</Value>
+                        <Value xmlns:q6="http://microsoft.com/wsdl/types/" xsi:type="q6:guid">c9b31616-009b-478c-bdf2-ddf3fe6151e8</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -400,6 +575,18 @@
             <Name>test</Name>
             <Group>test</Group>
             <DataTypeString>List&lt;Primo.GMCS.CounterpartyScoring.Models.InnResult&gt;</DataTypeString>
+            <Direction>IN_OUT</Direction>
+        </ScriptVariable>
+        <ScriptVariable>
+            <Name>CapchaApiKey</Name>
+            <Group>Capcha</Group>
+            <DataTypeString>String</DataTypeString>
+            <Direction>IN_OUT</Direction>
+        </ScriptVariable>
+        <ScriptVariable>
+            <Name>DownloadFolder</Name>
+            <Group>Folders</Group>
+            <DataTypeString>String</DataTypeString>
             <Direction>IN_OUT</Direction>
         </ScriptVariable>
     </GlobalVariables>

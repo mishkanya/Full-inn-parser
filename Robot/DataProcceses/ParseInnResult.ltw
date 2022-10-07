@@ -153,12 +153,272 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>SeqPath</Name>
+                                <Value xsi:type="xsd:string">".\\Parsers\\EgrulNalog.ltw"</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ComponentName</Name>
+                                <Value xsi:type="xsd:string">Ссылка на процесс+</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Annotation</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Cache</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>RunSand</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>CloseSand</Name>
+                                <Value xsi:type="xsd:boolean">true</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SandAsync</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SandStartTo</Name>
+                                <Value xsi:type="xsd:string">60000</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SandWaitTo</Name>
+                                <Value xsi:type="xsd:string">0</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Mapping</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Arguments</Name>
+                                <Value xsi:type="ArrayOfScriptVariable">
+                                    <ScriptVariable>
+                                        <Name>Result</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">EgrulNalogResult</DefaultValue>
+                                        <DataTypeString>Primo.GMCS.CounterpartyScoring.Models.SiteData.EgrulNalogResult</DataTypeString>
+                                        <Direction>OUT</Direction>
+                                    </ScriptVariable>
+                                    <ScriptVariable>
+                                        <Name>Inn_str</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">Inn_str</DefaultValue>
+                                        <DataTypeString>System.String</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </ScriptVariable>
+                                    <ScriptVariable>
+                                        <Name>DownloadFolder</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">DownloadFolder</DefaultValue>
+                                        <DataTypeString>System.String</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </ScriptVariable>
+                                </Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>TextTag</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ComponentID</Name>
+                                <Value xmlns:q3="http://microsoft.com/wsdl/types/" xsi:type="q3:guid">36605e6a-646a-4c0e-9afa-4596970545c9</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ContinueOnException</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>PreventLogging</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SSSuccess</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SSFail</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>true</IsListValue>
+                                <Name>NoCodeProperties</Name>
+                                <ListValue />
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>NoCodeUsed</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>IsCollapsed</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ShowAnnotation</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                        </Properties>
+                    </SerializationComponent>
+                    <SerializationComponent>
+                        <ClassName>LTools.Workflow.Elements.WFSequenceLink</ClassName>
+                        <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                        <Properties>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SeqPath</Name>
+                                <Value xsi:type="xsd:string">".\\Parsers\\PBNalog.ltw"</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ComponentName</Name>
+                                <Value xsi:type="xsd:string">Ссылка на процесс + </Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Annotation</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Cache</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>RunSand</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>CloseSand</Name>
+                                <Value xsi:type="xsd:boolean">true</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SandAsync</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SandStartTo</Name>
+                                <Value xsi:type="xsd:string">60000</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SandWaitTo</Name>
+                                <Value xsi:type="xsd:string">0</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Mapping</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Arguments</Name>
+                                <Value xsi:type="ArrayOfScriptVariable">
+                                    <ScriptVariable>
+                                        <Name>Inn_str_in</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">Inn_str</DefaultValue>
+                                        <DataTypeString>System.String</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </ScriptVariable>
+                                    <ScriptVariable>
+                                        <Name>Result_out</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">PbNalogResult</DefaultValue>
+                                        <DataTypeString>Primo.GMCS.CounterpartyScoring.Models.SiteData.PbNalogResult</DataTypeString>
+                                        <Direction>OUT</Direction>
+                                    </ScriptVariable>
+                                    <ScriptVariable>
+                                        <Name>CapchaApiKey</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">CapchaApiKey</DefaultValue>
+                                        <DataTypeString>System.String</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </ScriptVariable>
+                                </Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>TextTag</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ComponentID</Name>
+                                <Value xmlns:q4="http://microsoft.com/wsdl/types/" xsi:type="q4:guid">ad5cd127-1090-46c3-a7a8-1339bd82a9ec</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ContinueOnException</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>PreventLogging</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SSSuccess</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SSFail</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>true</IsListValue>
+                                <Name>NoCodeProperties</Name>
+                                <ListValue />
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>NoCodeUsed</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>IsCollapsed</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>ShowAnnotation</Name>
+                                <Value xsi:type="xsd:boolean">false</Value>
+                            </SerializationItem>
+                        </Properties>
+                    </SerializationComponent>
+                    <SerializationComponent>
+                        <ClassName>LTools.Workflow.Elements.WFSequenceLink</ClassName>
+                        <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                        <Properties>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>SeqPath</Name>
                                 <Value xsi:type="xsd:string">".\\Parsers\\KadArbitr.ltw"</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>ComponentName</Name>
-                                <Value xsi:type="xsd:string">Ссылка на процесс</Value>
+                                <Value xsi:type="xsd:string">Ссылка на процесс+?</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -225,7 +485,7 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>ComponentID</Name>
-                                <Value xmlns:q3="http://microsoft.com/wsdl/types/" xsi:type="q3:guid">c5c80543-b081-4e0b-813b-516d326a7c9e</Value>
+                                <Value xmlns:q5="http://microsoft.com/wsdl/types/" xsi:type="q5:guid">c5c80543-b081-4e0b-813b-516d326a7c9e</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -276,12 +536,12 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>SeqPath</Name>
-                                <Value xsi:type="xsd:string">".\\Parsers\\PBNalog.ltw"</Value>
+                                <Value xsi:type="xsd:string">".\\Parsers\\BankrotFedresurs.ltw"</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>ComponentName</Name>
-                                <Value xsi:type="xsd:string">Ссылка на процесс</Value>
+                                <Value xsi:type="xsd:string">Ссылка на процесс+</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -335,7 +595,8 @@
                                     <ScriptVariable>
                                         <Name>Result_out</Name>
                                         <Group />
-                                        <DataTypeString>Primo.GMCS.CounterpartyScoring.Models.SiteData.PbNalogResult</DataTypeString>
+                                        <DefaultValue xsi:type="xsd:string">BankrotFedresurResult</DefaultValue>
+                                        <DataTypeString>Primo.GMCS.CounterpartyScoring.Models.SiteData.BankrotFedresurResult</DataTypeString>
                                         <Direction>OUT</Direction>
                                     </ScriptVariable>
                                 </Value>
@@ -347,7 +608,7 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>ComponentID</Name>
-                                <Value xmlns:q4="http://microsoft.com/wsdl/types/" xsi:type="q4:guid">ad5cd127-1090-46c3-a7a8-1339bd82a9ec</Value>
+                                <Value xmlns:q6="http://microsoft.com/wsdl/types/" xsi:type="q6:guid">a9c29978-3759-4e66-8b85-492866684fed</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -393,129 +654,6 @@
                     </SerializationComponent>
                 </Components>
             </SerializationComponent>
-            <SerializationComponent>
-                <ClassName>LTools.Workflow.Elements.WFSequenceLink</ClassName>
-                <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
-                <Properties>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>SeqPath</Name>
-                        <Value xsi:type="xsd:string">".\\Parsers\\BankrotFedresurs.ltw"</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>ComponentName</Name>
-                        <Value xsi:type="xsd:string">Ссылка на процесс</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>Annotation</Name>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>Cache</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>RunSand</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>CloseSand</Name>
-                        <Value xsi:type="xsd:boolean">true</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>SandAsync</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>SandStartTo</Name>
-                        <Value xsi:type="xsd:string">60000</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>SandWaitTo</Name>
-                        <Value xsi:type="xsd:string">0</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>Mapping</Name>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>Arguments</Name>
-                        <Value xsi:type="ArrayOfScriptVariable">
-                            <ScriptVariable>
-                                <Name>Inn_str_in</Name>
-                                <Group />
-                                <DefaultValue xsi:type="xsd:string">Inn_str</DefaultValue>
-                                <DataTypeString>System.String</DataTypeString>
-                                <Direction>IN</Direction>
-                            </ScriptVariable>
-                            <ScriptVariable>
-                                <Name>Result_out</Name>
-                                <Group />
-                                <DefaultValue xsi:type="xsd:string">BankrotFedresurResult</DefaultValue>
-                                <DataTypeString>Primo.GMCS.CounterpartyScoring.Models.SiteData.BankrotFedresurResult</DataTypeString>
-                                <Direction>OUT</Direction>
-                            </ScriptVariable>
-                        </Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>TextTag</Name>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>ComponentID</Name>
-                        <Value xmlns:q5="http://microsoft.com/wsdl/types/" xsi:type="q5:guid">a9c29978-3759-4e66-8b85-492866684fed</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>ContinueOnException</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>PreventLogging</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>SSSuccess</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>SSFail</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>true</IsListValue>
-                        <Name>NoCodeProperties</Name>
-                        <ListValue />
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>NoCodeUsed</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>IsCollapsed</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                    <SerializationItem>
-                        <IsListValue>false</IsListValue>
-                        <Name>ShowAnnotation</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
-                    </SerializationItem>
-                </Properties>
-            </SerializationComponent>
             <SerializationComponent xsi:type="SerializationContainer">
                 <ClassName>Primo.GMCS.CounterpartyScoring.Activities.Containers.Back.PrimoInnResultContainerBack</ClassName>
                 <AssemblyName>Primo.GMCS.CounterpartyScoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
@@ -551,7 +689,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>ComponentID</Name>
-                        <Value xmlns:q6="http://microsoft.com/wsdl/types/" xsi:type="q6:guid">5a318b27-b50d-4837-8fd3-3b2f07ed38bc</Value>
+                        <Value xmlns:q7="http://microsoft.com/wsdl/types/" xsi:type="q7:guid">5a318b27-b50d-4837-8fd3-3b2f07ed38bc</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -624,7 +762,7 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>ComponentID</Name>
-                                <Value xmlns:q7="http://microsoft.com/wsdl/types/" xsi:type="q7:guid">9c98df74-e22e-4a6f-9be5-9b0b93096805</Value>
+                                <Value xmlns:q8="http://microsoft.com/wsdl/types/" xsi:type="q8:guid">9c98df74-e22e-4a6f-9be5-9b0b93096805</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -659,7 +797,7 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>IsCollapsed</Name>
-                                <Value xsi:type="xsd:boolean">true</Value>
+                                <Value xsi:type="xsd:boolean">false</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -668,75 +806,6 @@
                             </SerializationItem>
                         </Properties>
                         <Components>
-                            <SerializationComponent>
-                                <ClassName>Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back.PrimoSetKadArbitrDataBack</ClassName>
-                                <AssemblyName>Primo.GMCS.CounterpartyScoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
-                                <Properties>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>ComponentName</Name>
-                                        <Value xsi:type="xsd:string">Вставить данные с сайта https://kad.arbitr.ru/</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>Annotation</Name>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>Result</Name>
-                                        <Value xsi:type="xsd:string">KadArbitrResult</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>TextTag</Name>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>ComponentID</Name>
-                                        <Value xmlns:q8="http://microsoft.com/wsdl/types/" xsi:type="q8:guid">96cf98f8-bc0d-4910-a25e-39b14450f87a</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>ContinueOnException</Name>
-                                        <Value xsi:type="xsd:boolean">false</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>PreventLogging</Name>
-                                        <Value xsi:type="xsd:boolean">false</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>SSSuccess</Name>
-                                        <Value xsi:type="xsd:boolean">false</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>SSFail</Name>
-                                        <Value xsi:type="xsd:boolean">false</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>true</IsListValue>
-                                        <Name>NoCodeProperties</Name>
-                                        <ListValue />
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>NoCodeUsed</Name>
-                                        <Value xsi:type="xsd:boolean">false</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>IsCollapsed</Name>
-                                        <Value xsi:type="xsd:boolean">false</Value>
-                                    </SerializationItem>
-                                    <SerializationItem>
-                                        <IsListValue>false</IsListValue>
-                                        <Name>ShowAnnotation</Name>
-                                        <Value xsi:type="xsd:boolean">false</Value>
-                                    </SerializationItem>
-                                </Properties>
-                            </SerializationComponent>
                             <SerializationComponent>
                                 <ClassName>Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back.PrimoSetPbNalogDataBack</ClassName>
                                 <AssemblyName>Primo.GMCS.CounterpartyScoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
@@ -806,76 +875,214 @@
                                     </SerializationItem>
                                 </Properties>
                             </SerializationComponent>
+                            <SerializationComponent>
+                                <ClassName>Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back.PrimoSetKadArbitrDataBack</ClassName>
+                                <AssemblyName>Primo.GMCS.CounterpartyScoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                                <Properties>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ComponentName</Name>
+                                        <Value xsi:type="xsd:string">Вставить данные с сайта https://kad.arbitr.ru/</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>Annotation</Name>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>Result</Name>
+                                        <Value xsi:type="xsd:string">KadArbitrResult</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>TextTag</Name>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ComponentID</Name>
+                                        <Value xmlns:q10="http://microsoft.com/wsdl/types/" xsi:type="q10:guid">96cf98f8-bc0d-4910-a25e-39b14450f87a</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ContinueOnException</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>PreventLogging</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>SSSuccess</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>SSFail</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>true</IsListValue>
+                                        <Name>NoCodeProperties</Name>
+                                        <ListValue />
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>NoCodeUsed</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>IsCollapsed</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ShowAnnotation</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                </Properties>
+                            </SerializationComponent>
+                            <SerializationComponent>
+                                <ClassName>Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back.PrimoSetFedresursDataBack</ClassName>
+                                <AssemblyName>Primo.GMCS.CounterpartyScoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                                <Properties>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ComponentName</Name>
+                                        <Value xsi:type="xsd:string">Вставить данные с сайта bankrot.fedresurs.ru</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>Annotation</Name>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>Result</Name>
+                                        <Value xsi:type="xsd:string">BankrotFedresurResult</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>TextTag</Name>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ComponentID</Name>
+                                        <Value xmlns:q11="http://microsoft.com/wsdl/types/" xsi:type="q11:guid">7d3efd18-7f43-4c23-94f2-f3bd17c90043</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ContinueOnException</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>PreventLogging</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>SSSuccess</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>SSFail</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>true</IsListValue>
+                                        <Name>NoCodeProperties</Name>
+                                        <ListValue />
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>NoCodeUsed</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>IsCollapsed</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ShowAnnotation</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                </Properties>
+                            </SerializationComponent>
+                            <SerializationComponent>
+                                <ClassName>Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back.PrimoSetEgrulNalogDataBack</ClassName>
+                                <AssemblyName>Primo.GMCS.CounterpartyScoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                                <Properties>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ComponentName</Name>
+                                        <Value xsi:type="xsd:string">Вставить данные с сайта egrul.nalog.ru</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>Annotation</Name>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>Result</Name>
+                                        <Value xsi:type="xsd:string">EgrulNalogResult</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>TextTag</Name>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ComponentID</Name>
+                                        <Value xmlns:q12="http://microsoft.com/wsdl/types/" xsi:type="q12:guid">9dfb4115-e624-46f8-8f48-237f42fd70a8</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ContinueOnException</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>PreventLogging</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>SSSuccess</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>SSFail</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>true</IsListValue>
+                                        <Name>NoCodeProperties</Name>
+                                        <ListValue />
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>NoCodeUsed</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>IsCollapsed</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>ShowAnnotation</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                </Properties>
+                            </SerializationComponent>
                         </Components>
-                    </SerializationComponent>
-                    <SerializationComponent>
-                        <ClassName>Primo.GMCS.CounterpartyScoring.Activities.Elements.Setters.Back.PrimoSetFedresursDataBack</ClassName>
-                        <AssemblyName>Primo.GMCS.CounterpartyScoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
-                        <Properties>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>ComponentName</Name>
-                                <Value xsi:type="xsd:string">Вставить данные с сайта bankrot.fedresurs.ru</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>Annotation</Name>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>Result</Name>
-                                <Value xsi:type="xsd:string">BankrotFedresurResult</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>TextTag</Name>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>ComponentID</Name>
-                                <Value xmlns:q10="http://microsoft.com/wsdl/types/" xsi:type="q10:guid">7d3efd18-7f43-4c23-94f2-f3bd17c90043</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>ContinueOnException</Name>
-                                <Value xsi:type="xsd:boolean">false</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>PreventLogging</Name>
-                                <Value xsi:type="xsd:boolean">false</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>SSSuccess</Name>
-                                <Value xsi:type="xsd:boolean">false</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>SSFail</Name>
-                                <Value xsi:type="xsd:boolean">false</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>true</IsListValue>
-                                <Name>NoCodeProperties</Name>
-                                <ListValue />
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>NoCodeUsed</Name>
-                                <Value xsi:type="xsd:boolean">false</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>IsCollapsed</Name>
-                                <Value xsi:type="xsd:boolean">false</Value>
-                            </SerializationItem>
-                            <SerializationItem>
-                                <IsListValue>false</IsListValue>
-                                <Name>ShowAnnotation</Name>
-                                <Value xsi:type="xsd:boolean">false</Value>
-                            </SerializationItem>
-                        </Properties>
                     </SerializationComponent>
                 </Components>
             </SerializationComponent>
@@ -900,6 +1107,12 @@
             <DataTypeString>Primo.GMCS.CounterpartyScoring.Models.SiteData.BankrotFedresurResult</DataTypeString>
             <Direction>IN_OUT</Direction>
         </ScriptVariable>
+        <ScriptVariable>
+            <Name>EgrulNalogResult</Name>
+            <Group>Site Results</Group>
+            <DataTypeString>Primo.GMCS.CounterpartyScoring.Models.SiteData.EgrulNalogResult</DataTypeString>
+            <Direction>IN_OUT</Direction>
+        </ScriptVariable>
     </GlobalVariables>
     <Arguments>
         <ScriptVariable>
@@ -913,6 +1126,18 @@
             <Group>Main</Group>
             <DataTypeString>Primo.GMCS.CounterpartyScoring.Models.InnResult</DataTypeString>
             <Direction>OUT</Direction>
+        </ScriptVariable>
+        <ScriptVariable>
+            <Name>CapchaApiKey</Name>
+            <Group>Capcha</Group>
+            <DataTypeString>String</DataTypeString>
+            <Direction>IN</Direction>
+        </ScriptVariable>
+        <ScriptVariable>
+            <Name>DownloadFolder</Name>
+            <Group>Folders</Group>
+            <DataTypeString>String</DataTypeString>
+            <Direction>IN</Direction>
         </ScriptVariable>
     </Arguments>
 </SerializationRoot>

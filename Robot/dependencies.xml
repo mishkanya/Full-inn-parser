@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
 <ProjectDependencies xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <NugetDependencies />
+    <NugetDependencies>
+        <NugetDependency>
+            <Id>Primo.2Capcha</Id>
+            <Version>1.0.0</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+    </NugetDependencies>
     <Namespaces>
         <ProjectNamespace>
             <FullName>System</FullName>
