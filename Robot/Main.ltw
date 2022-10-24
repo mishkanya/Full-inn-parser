@@ -133,7 +133,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>IsCollapsed</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
+                        <Value xsi:type="xsd:boolean">true</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -416,7 +416,7 @@
                             <ScriptVariable>
                                 <Name>InnResults_List</Name>
                                 <Group />
-                                <DefaultValue xsi:type="xsd:string">test</DefaultValue>
+                                <DefaultValue xsi:type="xsd:string">InnResults</DefaultValue>
                                 <DataTypeString>System.Collections.Generic.List&lt;Primo.GMCS.CounterpartyScoring.Models.InnResult&gt;</DataTypeString>
                                 <Direction>OUT</Direction>
                             </ScriptVariable>
@@ -494,7 +494,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>Message</Name>
-                        <Value xsi:type="xsd:string">"InnResults count : " + test.Count()</Value>
+                        <Value xsi:type="xsd:string">"InnResults count : " + InnResults.Count()</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -572,8 +572,8 @@
             <Direction>IN_OUT</Direction>
         </ScriptVariable>
         <ScriptVariable>
-            <Name>test</Name>
-            <Group>test</Group>
+            <Name>InnResults</Name>
+            <Group>MainObjects</Group>
             <DataTypeString>List&lt;Primo.GMCS.CounterpartyScoring.Models.InnResult&gt;</DataTypeString>
             <Direction>IN_OUT</Direction>
         </ScriptVariable>

@@ -153,7 +153,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>IsCollapsed</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
+                        <Value xsi:type="xsd:boolean">true</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -222,7 +222,7 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>IsCollapsed</Name>
-                                <Value xsi:type="xsd:boolean">false</Value>
+                                <Value xsi:type="xsd:boolean">true</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -331,7 +331,7 @@
                                     <SerializationItem>
                                         <IsListValue>false</IsListValue>
                                         <Name>ComponentName</Name>
-                                        <Value xsi:type="xsd:string">If-Else</Value>
+                                        <Value xsi:type="xsd:string">Если карточки с информацией нет</Value>
                                     </SerializationItem>
                                     <SerializationItem>
                                         <IsListValue>false</IsListValue>
@@ -614,7 +614,7 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>ComponentName</Name>
-                                <Value xsi:type="xsd:string">Прокрутка</Value>
+                                <Value xsi:type="xsd:string">Прокрутка до кнопки "Вся информация"</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -696,7 +696,7 @@
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
                                 <Name>ComponentName</Name>
-                                <Value xsi:type="xsd:string">Клик мышью</Value>
+                                <Value xsi:type="xsd:string">Перейти к странице с информацией</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -850,7 +850,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>ComponentName</Name>
-                        <Value xsi:type="xsd:string">Присоединиться к браузеру</Value>
+                        <Value xsi:type="xsd:string">Подуключаемся к странице с информацией</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -939,7 +939,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>IsCollapsed</Name>
-                        <Value xsi:type="xsd:boolean">false</Value>
+                        <Value xsi:type="xsd:boolean">true</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
